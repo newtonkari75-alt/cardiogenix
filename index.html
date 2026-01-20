@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes" />
+  
+  <!-- --- SEO: CORE METADATA (UK TARGETING) --- -->
+  <title>CardioGenix™ UK | Official Distributor | Advanced Metabolic Support</title>
+  <meta name="description" content="Official CardioGenix™ UK stockist. Advanced metabolic support for heart health & glycogen control. Fast Royal Mail Tracked shipping across England & UK." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  
+  <!-- --- CANONICAL & ALTERNATES --- -->
+  <link rel="canonical" href="https://cardiogenix.vercel.app/" />
+  <link rel="alternate" hreflang="en-GB" href="https://cardiogenix.vercel.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://cardiogenix.vercel.app/" />
+
+  <!-- --- PERFORMANCE OPTIMIZATION --- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://flagcdn.com" />
+  <link rel="dns-prefetch" href="https://flagcdn.com" />
+  
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="images/product.webp" as="image" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
+
+  <!-- --- SECURITY & POLICIES --- -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#F4F8FF" />
+
+  <!-- Import Inter Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- --- STRUCTURED DATA (JSON-LD) --- -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@graph": [
+      {
+        "@type": "Product",
+        "name": "CardioGenix™",
+        "image": ["https://cardiogenix.vercel.app/images/product.webp"],
+        "description": "Advanced daily formula designed to support healthy glycogen control.",
+        "brand": { "@type": "Brand", "name": "CardioGenix" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "12400" },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      /* --- DESIGN SYSTEM (Unificado) --- */
+      --page-bg: #FFFFFF;
+      --section-bg: #F8FAFC;
+      
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      
+      --accent: #000000;
+      --green-ok: #16a34a;
+      --star: #F59E0B; 
+      
+      --radius: 12px;
+      --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      
+      --max-w: 1080px;
+    }
+    
+    *{box-sizing:border-box}
+    
+    body{
+      margin:0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text-main);
+      background: var(--page-bg);
+      line-height:1.6;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      overflow-x: hidden;
+    }
+    
+    a{color:inherit; text-decoration:none; transition: opacity 0.2s;}
+    a:hover{opacity:0.8;}
+    img{max-width:100%; height:auto; display:block; border:none; outline:none;}
+
+    .wrap{
+      max-width: var(--max-w); 
+      margin:0 auto; 
+      padding:0 24px;
+    }
+    
+    .text-center{text-align:center;}
+    .font-bold{font-weight:700;}
+    
+    /* --- HEADER (Laranja) --- */
+    .topbar{
+      background: #ED6A48;
+      padding:16px 0;
+      position:sticky; top:0; z-index:100;
+    }
+    .topbar .inner{display:flex; justify-content:center; align-items:center;}
+    .brand-logo{height: 32px; width: auto; object-fit: contain;}
+
+    /* --- PROMO STRIP (Preto e Branco) --- */
+    .promo-strip{
+      background: #000000;
+      padding: 12px 0;
+      font-size: 13px;
+      color: #ffffff;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    /* FORÇAR texto branco */
+    .promo-strip strong, .promo-strip b, .promo-strip span { color: #ffffff !important; }
+    .promo-strip svg { color: #ffffff !important; width:16px; height:16px; flex-shrink:0; }
+
+    .promo-items{
+      display:flex; justify-content:center; align-items:center; gap: 24px; flex-wrap:wrap;
+    }
+    @media (max-width: 600px) {
+      .promo-items { flex-direction: column; gap: 8px; text-align: center; }
+    }
+    .promo-item{display:flex; align-items:center; gap:8px;}
+    
+    /* --- HERO SECTION --- */
+    .hero{ padding: 50px 0 60px; }
+    .heroGrid{
+      display:grid; grid-template-columns: 1.1fr 0.9fr; gap:60px; align-items:center;
+    }
+    
+    @media (max-width: 900px){
+      .hero{ padding: 30px 0 50px; }
+      .heroGrid{ grid-template-columns:1fr; gap:32px; text-align:center; }
+      .cta-wrapper{ align-items:center; width: 100%; }
+      /* Mobile Bullets: Left aligned text, centered block */
+      .bullets{ text-align:left; display:inline-block; margin: 24px auto; max-width: 100%; }
+      .desktop-only { display: none !important; }
+      .mobile-only { display: flex !important; justify-content: center; margin: 24px 0; }
+      
+      h1 { font-size: 28px !important; line-height: 1.2 !important; }
+    }
+    @media (min-width: 901px){
+      .mobile-only { display: none !important; }
+      .desktop-only { display: block !important; }
+    }
+
+    /* Trust Badge */
+    .trust-badge{
+      display:inline-flex; align-items:center; gap:8px;
+      margin-bottom:24px; padding:6px 14px;
+      background: #f1f5f9; border-radius:99px;
+      font-size:13px; font-weight:700; color: var(--text-main);
+    }
+    .tp-stars{color: var(--star); letter-spacing:-1px;}
+
+    h1{
+      margin:0 0 16px;
+      font-size: clamp(32px, 5vw, 44px);
+      line-height:1.1; letter-spacing:-0.5px;
+      font-weight: 800; color: var(--text-main);
+    }
+    .sub{
+      margin:0 0 24px; color: var(--text-muted);
+      font-size:17px; line-height:1.6;
+    }
+
+    /* Bullets */
+    .bullets{list-style:none; padding:0; margin:0 0 32px; display:grid; gap:16px;}
+    .bullets li{display:flex; gap:12px; align-items:flex-start;}
+    .check-icon{
+      width:20px; height:20px; flex:0 0 auto;
+      color: var(--green-ok); margin-top:3px;
+    }
+    .bullets span{font-size:15px; color: var(--text-main);}
+    .bullets strong{font-weight: 700;}
+    
+    /* CTA Buttons */
+    .cta-wrapper{display:flex; flex-direction:column; gap:16px; align-items:center;}
+    
+    .btn-primary{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:18px 40px; width: 100%; max-width: 340px;
+      border-radius: 99px; /* Pill Shape */
+      background: #000000; color: #ffffff;
+      font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform .1s;
+      cursor: pointer;
+    }
+    .btn-primary:active{transform: scale(0.98);}
+
+    .guarantee-container{
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .guarantee-text{
+      font-size:12px; color:var(--text-muted); 
+      display:flex; align-items:center; gap:6px; font-weight: 500;
+    }
+    
+    /* Product Image & Badge */
+    .product-img {mix-blend-mode: multiply; max-width: 320px; width: 100%;}
+    .hero-visual{position:relative;}
+    
+    /* Badge: PRETO e BRANCO Forçado */
+    .float-badge{
+      position:absolute; top:10px; right:10px;
+      background: #000000 !important;
+      padding:8px 14px; border-radius:99px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align:center; 
+      z-index: 10;
+    }
+    .float-badge b{ display:block; color: #ffffff !important; font-size:14px; font-weight:800; line-height:1; }
+    .float-badge span{ display:block; color: #ffffff !important; font-size:9px; text-transform:uppercase; margin-top:2px; opacity:0.9;}
+
+    /* --- TESTIMONIALS (Harmonizado) --- */
+    .testimonials-section {
+      padding: 60px 0;
+      background: var(--section-bg);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .section-header { text-align: center; margin-bottom: 40px; }
+    .rating-score { font-size: 24px; font-weight: 800; display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom: 8px; }
+    .rating-count { font-size: 14px; color: var(--text-muted); }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    /* Cartão de Depoimento = Estilo Cartão de País */
+    .card-style {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--border-color);
+      transition: transform 0.2s;
+    }
+    
+    .testi-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .user-avatar {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: #e2e8f0; overflow: hidden; flex-shrink: 0;
+    }
+    .user-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+    .user-info b { display: block; font-size: 15px; color: var(--text-main); line-height: 1.3; }
+    .verified-badge {
+      display: flex; align-items: center; gap: 4px;
+      font-size: 11px; color: var(--green-ok); font-weight: 700;
+    }
+    .testi-stars { color: var(--star); font-size: 14px; margin-bottom: 12px; }
+    .testi-text { font-size: 14px; color: var(--text-muted); line-height: 1.6; font-style: italic; }
+
+    /* --- Trustpilot Style Header (New) --- */
+    .tp-header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 40px;
+    }
+    .tp-label { font-size: 16px; font-weight: 600; color: var(--text-main); }
+    .tp-stars-lg { color: #00b67a; font-size: 28px; line-height: 1; letter-spacing: 2px; } /* Trustpilot Green */
+    .tp-trust { font-size: 14px; color: var(--text-muted); margin-top: 4px; }
+
+    /* --- COUNTRY SELECTOR --- */
+    .location-section{ padding: 60px 0; background: #fff; }
+    .country-grid-layout{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px; margin-top: 30px;
+    }
+    /* Reutiliza .card-style mas adiciona hover */
+    .country-card {
+      text-decoration: none;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .country-card:hover {
+      border-color: #000; transform: translateY(-2px);
+    }
+    
+    .flag-img{ width: 40px; border-radius: 4px; margin-right: 16px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); }
+    .c-info b{display:block; font-size:16px; color:var(--text-main);}
+    .c-info span{color:var(--green-ok); font-weight:600; font-size:12px;}
+    .c-arrow{color: var(--border-color); font-weight: bold;}
+
+    /* --- FOOTER --- */
+    footer{
+      background: #0f172a; color: #94a3b8;
+      padding:60px 0 40px; font-size:12px;
+    }
+    footer a{color:#cbd5e1; cursor:pointer; text-decoration:none;}
+    footer a:hover{color:#fff; text-decoration:underline;}
+    
+    .footer-links{display:flex; justify-content:center; gap:24px; flex-wrap:wrap; margin-bottom:30px;}
+    .legal-text{text-align:center; max-width:800px; margin:0 auto 30px; font-size:11px; opacity:0.6;}
+    .copyright{text-align:center; padding-top:20px; border-top:1px solid rgba(255,255,255,0.1);}
+    .legal-bottom{ font-size:10px; opacity:0.4; text-align:justify; margin-top:20px; }
+
+    /* MODALS */
+    .modal-overlay {display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:999; align-items:center; justify-content:center; padding:20px;}
+    .modal-open {display:flex;}
+    .modal-box {background:#fff; width:100%; max-width:500px; max-height:80vh; border-radius:12px; padding:24px; overflow-y:auto; position:relative;}
+    .modal-close {position:absolute; top:15px; right:15px; cursor:pointer; font-size:24px; color:#000;}
+    .modal-content h3{margin-top:0; border-bottom:1px solid #eee; padding-bottom:10px; color:#000;}
+    .modal-content p{color: #444; font-size:14px;}
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="inner">
+        <a href="/" aria-label="Home">
+          <img src="images/logo.webp" alt="CardioGenix Official" class="brand-logo">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROMO STRIP -->
+  <div class="promo-strip">
+    <div class="wrap">
+      <div class="promo-items">
+        <div class="promo-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          <span>Free Shipping Today</span>
+        </div>
+        <div class="promo-item">
+          <!-- Corrigido para ícone de Tag/Porcentagem -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+          <span>Up to <strong>54% OFF</strong></span>
+        </div>
+        <div class="promo-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>30-Day Money-Back Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="wrap heroGrid">
+      
+      <!-- Content -->
+      <div>
+        <div class="trust-badge">
+          <span class="tp-stars">★★★★★</span> Excellent 4.8/5
+        </div>
+
+        <h1>Master Your Metabolism: The Daily Support for Steady Energy &amp; Heart Health</h1>
+        <p class="sub">Finally, a formula that supports healthy <strong>glycogen control</strong> and cardiovascular stability without the "caffeine crash".</p>
+
+        <!-- Mobile Image -->
+        <div class="hero-visual mobile-only">
+          <img src="images/product.webp" alt="CardioGenix Bottle" class="product-img">
+          <div class="float-badge"><b>Up to 54% OFF</b><span>Limited Offer</span></div>
+        </div>
+
+        <ul class="bullets">
+          <li>
+            <!-- Ícone: Activity (Stable Energy) -->
+            <div class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <span><strong>Stable energy after meals</strong> — Supports steady energy without crashes.</span>
+          </li>
+          <li>
+            <!-- Ícone: Scale (Balance) -->
+            <div class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+                <path d="M7 21h10"/>
+                <path d="M12 3v18"/>
+                <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+              </svg>
+            </div>
+            <span><strong>Healthy blood sugar balance</strong> — Helps maintain metabolic stability daily.</span>
+          </li>
+          <li>
+            <!-- Ícone: Leaf (Natural/Stimulant-free) -->
+            <div class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.5 3 6 1.5 2.25 1.7 5.3 0 7.8-1 1.5-2.7 2.2-4 2.2-1.7 0-3-.7-4-1.5z"/>
+                <path d="M6 10h.01"/>
+                <path d="M6 14h.01"/>
+              </svg>
+            </div>
+            <span><strong>Stimulant-free formula</strong> — No caffeine. No jitters. No anxiety.</span>
+          </li>
+          <li>
+            <!-- Ícone: Heart (Cardiovascular) -->
+            <div class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+            </div>
+            <span><strong>Heart & circulation support</strong> — Supports cardiovascular health as you age.</span>
+          </li>
+          <li>
+            <!-- Ícone: Cog (Metabolic Efficiency) -->
+            <div class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.1a2 2 0 0 1-1-1.72v-.51a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <span><strong>Metabolism & weight balance</strong> — Helps keep metabolism working efficiently.</span>
+          </li>
+        </ul>
+
+        <div class="cta-wrapper">
+          <a class="btn-primary" href="#offers">Check Local Availability</a>
+          <div class="guarantee-container">
+            <div class="guarantee-text">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>30-Day Money-Back Guarantee (Ironclad)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Image -->
+      <div class="hero-visual desktop-only">
+        <img src="images/product.webp" alt="CardioGenix Bottle" class="product-img">
+        <div class="float-badge"><b>Up to 54% OFF</b><span>Limited Offer</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials-section">
+    <div class="wrap">
+      
+      <!-- Trustpilot Style Header (3 Lines) -->
+      <div class="tp-header-container">
+        <div class="tp-label">Average rating: 4.8/5</div>
+        <div class="tp-stars-lg">★★★★★</div>
+        <div class="tp-trust">Trusted by over <strong>100,000</strong> customers</div>
+      </div>
+
+      <div class="testimonial-grid">
+        <!-- Card 1 -->
+        <div class="card-style">
+          <div class="testi-header">
+            <div class="user-avatar">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah M.">
+            </div>
+            <div class="user-info">
+              <b>Sarah M.</b>
+              <div class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Verified Buyer
+              </div>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"I used to hit a wall every day around 3 PM after lunch. Since starting this, my energy is steady all day long. No more naps needed."</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card-style">
+          <div class="testi-header">
+            <div class="user-avatar">
+              <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Claire D.">
+            </div>
+            <div class="user-info">
+              <b>Claire D.</b>
+              <div class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Verified Buyer
+              </div>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Finally a supplement that doesn't make me jittery or anxious! I feel lighter and my cravings for sweets have significantly dropped."</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card-style">
+          <div class="testi-header">
+            <div class="user-avatar">
+              <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Emma L.">
+            </div>
+            <div class="user-info">
+              <b>Emma L.</b>
+              <div class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Verified Buyer
+              </div>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"My metabolism felt 'stuck' for years. This has been a game changer for my daily routine. I feel more active and my doctor is happy with my numbers."</p>
+        </div>
+
+        <!-- Card 4 (Male Testimonial) -->
+        <div class="card-style">
+          <div class="testi-header">
+            <div class="user-avatar">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David K.">
+            </div>
+            <div class="user-info">
+              <b>David K.</b>
+              <div class="verified-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Verified Buyer
+              </div>
+            </div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"I was skeptical at first, but the difference in my afternoon focus is undeniable. No more brain fog after lunch. It simply works."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTRY SELECTOR -->
+  <section class="location-section" id="offers">
+    <div class="wrap">
+      <h2 class="text-center" style="margin-bottom:10px; font-size:26px;">Complete your order securely</h2>
+      <p class="text-center" style="margin-bottom:30px; font-size:15px; color:var(--text-muted);">Your offer will be fulfilled from a trusted local partner</p>
+      
+      <div class="country-grid-layout">
+        <!-- UK -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R69LWND/?uid=47916">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/gb.png" alt="UK" class="flag-img">
+            <div class="c-info"><b>United Kingdom</b><span>Royal Mail Tracked</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- IE -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R62NH1C/?uid=47906">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/ie.png" alt="IE" class="flag-img">
+            <div class="c-info"><b>Ireland</b><span>An Post Priority</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- FR -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R619L8Q/?uid=47904">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/fr.png" alt="FR" class="flag-img">
+            <div class="c-info"><b>France</b><span>La Poste Colissimo</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- DE -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R5RQ3BB/?uid=47895">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/de.png" alt="DE" class="flag-img">
+            <div class="c-info"><b>Germany</b><span>DHL Paket</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- AT -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R5RQ3BB/?uid=47895">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/at.png" alt="AT" class="flag-img">
+            <div class="c-info"><b>Austria</b><span>Austrian Post</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- CH -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R5QC6KP/?uid=47893">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/ch.png" alt="CH" class="flag-img">
+            <div class="c-info"><b>Switzerland</b><span>Swiss Post</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- NL -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R65G8GK/?uid=47908">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/nl.png" alt="NL" class="flag-img">
+            <div class="c-info"><b>Netherlands</b><span>PostNL Tracked</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- BE -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R65G8GK/?uid=47908">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/be.png" alt="BE" class="flag-img">
+            <div class="c-info"><b>Belgium</b><span>Bpost 24h</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- DK -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R5T4Z2X/?uid=47897">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/dk.png" alt="DK" class="flag-img">
+            <div class="c-info"><b>Denmark</b><span>PostNord</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- SE -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R6881XR/?uid=47914">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/se.png" alt="SE" class="flag-img">
+            <div class="c-info"><b>Sweden</b><span>PostNord</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+        <!-- FI -->
+        <a class="card-style country-card" href="https://www.fasttrack36.com/PHPWHDRK/2R5XWPJ5/?uid=47902">
+          <div style="display:flex; align-items:center;">
+            <img src="https://flagcdn.com/w80/fi.png" alt="FI" class="flag-img">
+            <div class="c-info"><b>Finland</b><span>Posti Fast Track</span></div>
+          </div>
+          <div class="c-arrow">➜</div>
+        </a>
+      </div>
+      
+      <p class="text-center" style="font-size:12px; color:var(--text-muted); margin-top:24px;">All orders processed securely.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-links">
+        <a onclick="openModal('modal-terms')">Terms & Conditions</a>
+        <a onclick="openModal('modal-privacy')">Privacy Policy</a>
+        <a onclick="openModal('modal-shipping')">Shipping Policy</a>
+        <a onclick="openModal('modal-returns')">Returns & Refunds</a>
+        <a onclick="openModal('modal-contact')">Contact Support</a>
+      </div>
+
+      <div class="legal-text">
+        <p><strong>Official Distributor Notice:</strong> CardioGenix™ is a food supplement and is not intended to diagnose, treat, cure, or prevent any disease. Results may vary.</p>
+        <p>Registered Office: CardioGenix Ltd, 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ.</p>
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> CardioGenix. All rights reserved. Secure 256-bit SSL Encryption.
+      </div>
+      
+      <!-- Discrete Legal Bottom -->
+      <div class="legal-bottom">
+        <p><strong>Medical Disclaimer:</strong> The content of this site is for informational purposes only and is not intended to be a substitute for professional medical advice, diagnosis, or treatment.</p>
+        <p><strong>Usage:</strong> Do not exceed the recommended daily dose. Not suitable for persons under 18.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="modal-terms" class="modal-overlay" onclick="closeModal(event,'modal-terms')"><div class="modal-box"><span class="modal-close" onclick="closeModal(event,'modal-terms')">×</span><div class="modal-content"><h3>Terms & Conditions</h3><p>Welcome to CardioGenix. By accessing this site, you agree to these terms...</p></div></div></div>
+  <div id="modal-privacy" class="modal-overlay" onclick="closeModal(event,'modal-privacy')"><div class="modal-box"><span class="modal-close" onclick="closeModal(event,'modal-privacy')">×</span><div class="modal-content"><h3>Privacy Policy</h3><p>Your privacy is important to us...</p></div></div></div>
+  <div id="modal-shipping" class="modal-overlay" onclick="closeModal(event,'modal-shipping')"><div class="modal-box"><span class="modal-close" onclick="closeModal(event,'modal-shipping')">×</span><div class="modal-content"><h3>Shipping Policy</h3><p>Orders processed in 1-3 days...</p></div></div></div>
+  <div id="modal-returns" class="modal-overlay" onclick="closeModal(event,'modal-returns')"><div class="modal-box"><span class="modal-close" onclick="closeModal(event,'modal-returns')">×</span><div class="modal-content"><h3>Returns</h3><p>30-day money back guarantee...</p></div></div></div>
+  <div id="modal-contact" class="modal-overlay" onclick="closeModal(event,'modal-contact')"><div class="modal-box"><span class="modal-close" onclick="closeModal(event,'modal-contact')">×</span><div class="modal-content"><h3>Contact</h3><p>Email: support@cardiogenix.com</p></div></div></div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function openModal(id){document.getElementById(id).classList.add('modal-open'); document.body.style.overflow='hidden';}
+    function closeModal(e,id){if(e)e.stopPropagation(); document.getElementById(id).classList.remove('modal-open'); document.body.style.overflow='';}
+  </script>
+</body>
+</html>
